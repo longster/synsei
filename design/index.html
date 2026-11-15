@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design — Synsei</title>
+<meta name="description" content="The Synsei design system: the logo, colors, type, and components every page is built from.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=3">
+<link rel="stylesheet" href="../design.css?v=1">
+<link rel="icon" type="image/svg+xml" href="../synsei-icon.svg">
+</head>
+<body>
+<a class="skip" href="#logo">Skip to the design system</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="../index.html"><img src="../synsei-logo.svg" alt="Synsei" height="30"></a>
+    <nav aria-label="Main">
+      <a href="../index.html#notes">Notes</a>
+      <a href="../index.html#learn">Learn</a>
+      <a href="../index.html#tools">Tools</a>
+      <a href="../index.html#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Design system</p>
+      <h1>How Synsei looks, and why.</h1>
+      <p class="lede">Synsei is SYN, synergy, plus SEI, Seek, Experiment, Improve. The name is the method: find something, try it, share what worked and get better. Everything on this page follows from that. No one-off styling. New components get spec'd here before they ship on a second page.</p>
+      <p class="lede">Taglines: "Learning out loud." for the hero, and "Try it. Write it down. Share what worked." for the notebook.</p>
+    </div>
+  </section>
+
+  <section id="logo" class="section">
+    <div class="wrap">
+      <h2>Logo</h2>
+      <p class="section-intro">The Stone. A Teacher's Red stone blob with a white S and two white echo curves, the voice going out. The wordmark is Patua One: "syn" in Teacher's Red, "sei" in Ink Black, red dot on the i.</p>
+      <div class="lockups">
+        <figure class="lockup">
+          <img class="lockup-icon" src="../synsei-icon.svg" alt="Synsei stone icon">
+          <img class="lockup-word" src="../synsei-logo.svg" alt="Synsei wordmark">
+          <figcaption>Vertical lockup, primary</figcaption>
+        </figure>
+        <figure class="lockup horizontal">
+          <img class="lockup-icon" src="../synsei-icon.svg" alt="Synsei stone icon">
+          <img class="lockup-word" src="../synsei-logo.svg" alt="Synsei wordmark">
+          <figcaption>Horizontal lockup</figcaption>
+        </figure>
+        <figure class="lockup">
+          <img class="lockup-icon" src="../synsei-icon.svg" alt="Synsei stone icon">
+          <figcaption>Icon alone, avatars and favicons</figcaption>
+        </figure>
+        <figure class="lockup">
+          <img class="lockup-word" src="../synsei-logo.svg" alt="Synsei wordmark">
+          <figcaption>Wordmark alone, headers</figcaption>
+        </figure>
+      </div>
+      <div class="lockups">
+        <figure class="lockup">
+          <img class="lockup-icon" src="../synsei-icon-black.svg" alt="Synsei icon in Ink Black">
+          <figcaption>One-color icon, Ink Black</figcaption>
+        </figure>
+        <figure class="lockup">
+          <img class="lockup-icon" src="../synsei-icon-red.svg" alt="Synsei icon in Teacher's Red">
+          <figcaption>One-color icon, Teacher's Red</figcaption>
+        </figure>
+        <figure class="lockup dark">
+          <img class="lockup-icon" src="../synsei-icon-rice-paper.svg" alt="Synsei icon in Rice Paper">
+          <figcaption>One-color icon, Rice Paper, on dark</figcaption>
+        </figure>
+        <figure class="lockup dark">
+          <img class="lockup-word" src="../synsei-wordmark-inverse.svg" alt="Synsei inverse wordmark">
+          <figcaption>Inverse wordmark, on dark</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="colors" class="section tint">
+    <div class="wrap">
+      <h2>Colors</h2>
+      <p class="section-intro">Six colors, plus two darker twins for text. Bright Ochre, Sage, and Stone are shapes and accents only, never body text. The dark twins carry words.</p>
+      <div class="swatches">
+        <article class="swatch">
+          <div class="chip" style="background:#f7f4ec"></div>
+          <div class="swatch-body">
+            <h3>Rice Paper</h3>
+            <p class="hex">#F7F4EC</p>
+            <p>Page background</p>
+            <p>16.60:1 on Ink Black, AAA</p>
+          </div>
+        </article>
+        <article class="swatch">
+          <div class="chip" style="background:#161513"></div>
+          <div class="swatch-body">
+            <h3>Ink Black</h3>
+            <p class="hex">#161513</p>
+            <p>Text, headings</p>
+            <p>16.60:1 on Rice Paper, AAA</p>
+          </div>
+        </article>
+        <article class="swatch">
+          <div class="chip" style="background:#b3402a"></div>
+          <div class="swatch-body">
+            <h3>Teacher's Red</h3>
+            <p class="hex">#B3402A</p>
+            <p>Accent, links, the one red mark</p>
+            <p>5.19:1 on Rice Paper, AA</p>
+          </div>
+        </article>
+        <article class="swatch">
+          <div class="chip" style="background:#c98a2d"></div>
+          <div class="swatch-body">
+            <h3>Ochre</h3>
+            <p class="hex">#C98A2D</p>
+            <p>Design track, highlights</p>
+            <p>2.67:1, shapes only</p>
+          </div>
+        </article>
+        <article class="swatch">
+          <div class="chip" style="background:#6f7d6a"></div>
+          <div class="swatch-body">
+            <h3>Sage</h3>
+            <p class="hex">#6F7D6A</p>
+            <p>AI track, calm secondary</p>
+            <p>3.97:1, large text only</p>
+          </div>
+        </article>
+        <article class="swatch">
+          <div class="chip" style="background:#8b8b84"></div>
+          <div class="swatch-body">
+            <h3>Stone</h3>
+            <p class="hex">#8B8B84</p>
+            <p>Hairlines, quiet elements</p>
+            <p>3.12:1, large text only</p>
+          </div>
+        </article>
+        <article class="swatch">
+          <div class="chip" style="background:#8d611f"></div>
+          <div class="swatch-body">
+            <h3>Ochre Dark</h3>
+            <p class="hex">#8D611F</p>
+            <p>Text-safe Ochre</p>
+            <p>4.95:1 on Rice Paper, AA</p>
+          </div>
+        </article>
+        <article class="swatch">
+          <div class="chip" style="background:#5e6a5a"></div>
+          <div class="swatch-body">
+            <h3>Sage Dark</h3>
+            <p class="hex">#5E6A5A</p>
+            <p>Text-safe Sage</p>
+            <p>5.18:1 on Rice Paper, AA</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="type" class="section">
+    <div class="wrap">
+      <h2>Typography</h2>
+      <p class="section-intro">Patua One for headings and the wordmark, its only weight. Nunito Sans for body. Small labels stay in Nunito Sans, never set 13px text in Patua One.</p>
+      <div class="specimen">
+        <p class="sample-display">Learning out loud.</p>
+        <p class="sample-note">Patua One, 44px, hero H1</p>
+      </div>
+      <div class="specimen">
+        <p class="sample-h2">Try it. Write it down. Share what worked.</p>
+        <p class="sample-note">Patua One, 32px, section H2</p>
+      </div>
+      <div class="specimen">
+        <p class="sample-body">Body text is Nunito Sans, 17px, line-height 1.6. Plain, direct, honest about what worked and what did not. Short notes, real experiments, no guru talk.</p>
+        <p class="sample-note">Nunito Sans, 17px, body</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="components" class="section tint">
+    <div class="wrap">
+      <h2>Components</h2>
+      <p class="section-intro">One red mark per view. Buttons are Teacher's Red with white text. Track shapes: circle for Design, square for Product, triangle for AI.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Button</h3>
+          <p><a class="button" href="#components">Read the latest note</a></p>
+          <p>Primary: Teacher's Red fill, white text, 12px 22px, radius 6px.</p>
+        </article>
+        <article class="card">
+          <h3><span class="track-shape circle" aria-hidden="true"></span>Design</h3>
+          <h3><span class="track-shape square" aria-hidden="true"></span>Product thinking</h3>
+          <h3><span class="track-shape triangle" aria-hidden="true"></span>AI</h3>
+          <p>Track shapes carry the track color: Ochre circle, Red square, Sage triangle.</p>
+        </article>
+        <article class="card">
+          <p class="card-date">Nov 12, 2026</p>
+          <h3>How I prompt any AI</h3>
+          <p>Note cards: date line 13px uppercase, title Patua One 21px, body 17px.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="tokens" class="section">
+    <div class="wrap">
+      <h2>Spacing and tokens</h2>
+      <p class="section-intro">The numbers every page shares.</p>
+      <ul class="tokens">
+        <li><code>Container</code> — max-width 1080px, padding 0 20px</li>
+        <li><code>Section</code> — 56px vertical, hero 72px top, 64px bottom</li>
+        <li><code>Radius</code> — 10px cards, 6px buttons</li>
+        <li><code>Card grid</code> — 3 columns, gap 20px, 1 column on small screens</li>
+        <li><code>H1</code> — Patua One, 44px, line-height 1.15, max-width 800px</li>
+        <li><code>H2</code> — Patua One, 32px, margin-bottom 12px</li>
+        <li><code>Intro</code> — muted, max-width 640px, margin-bottom 32px</li>
+        <li><code>Kicker</code> — Teacher's Red, bold, 13px, letter-spacing .08em, uppercase</li>
+        <li><code>Muted text</code> — Ink Black at 68% opacity, 6.07:1, passes AA</li>
+        <li><code>Section tint</code> — Stone at 8% opacity over Rice Paper</li>
+      </ul>
+      <div class="design-note" style="margin-top:32px">
+        <p><strong>Retired.</strong> Dojo terminology, the enso circle, and the hanko seal are retired. The name's sensei wordplay is the only Japanese thing about the brand.</p>
+        <p><strong>Rule.</strong> This system is the standard for all Synsei pages. No one-off styling. Dark theme is not built yet, light only.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Synsei. Learning out loud.</p>
+    <p><a href="https://lduong.com">lduong.com</a> &middot; <a href="https://www.houstondeafnetwork.com">HoustonDeafNetwork</a> &middot; <a href="https://echode.com">Echode</a> &middot; <a href="./">Design</a></p>
+  </div>
+</footer>
+</body>
+</html>

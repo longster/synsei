@@ -1,0 +1,103 @@
+/* Synsei design page — specimens only. Tokens live in styles.css. */
+
+.design-intro { max-width: 680px; }
+
+.lockups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.lockup {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 32px 24px;
+  text-align: center;
+}
+.lockup img { display: block; margin: 0 auto; }
+.lockup .lockup-icon { height: 72px; width: auto; margin-bottom: 16px; }
+.lockup .lockup-word { height: 32px; width: auto; }
+.lockup.horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.lockup.horizontal .lockup-icon { height: 56px; margin-bottom: 0; }
+.lockup.horizontal .lockup-word { height: 30px; }
+.lockup figcaption {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.lockup.dark { background: var(--ink); border-color: var(--ink); }
+.lockup.dark figcaption { color: rgba(247, 244, 236, 0.75); }
+
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.swatch {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.swatch .chip { height: 72px; }
+.swatch .swatch-body { padding: 16px; }
+.swatch h3 { font-size: 17px; margin: 0 0 4px; }
+.swatch p { margin: 0 0 4px; font-size: 14px; color: var(--muted); }
+.swatch p:last-child { margin-bottom: 0; }
+.swatch .hex { font-weight: bold; color: var(--ink); }
+
+.specimen {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+.specimen .sample-display {
+  font-family: var(--display);
+  font-size: 44px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+}
+.specimen .sample-h2 {
+  font-family: var(--display);
+  font-size: 32px;
+  margin: 0 0 8px;
+}
+.specimen .sample-body { margin: 0 0 8px; }
+.specimen .sample-note { color: var(--muted); font-size: 14px; margin: 0; }
+
+.tokens { list-style: none; padding: 0; margin: 0; }
+.tokens li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+}
+.tokens li:last-child { border-bottom: 0; }
+.tokens code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 14px;
+  background: var(--tint);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.design-note {
+  background: var(--tint);
+  border-radius: 10px;
+  padding: 24px;
+}
+.design-note p { margin: 0 0 8px; }
+.design-note p:last-child { margin-bottom: 0; }
+
+@media (max-width: 760px) {
+  .lockups { grid-template-columns: 1fr; }
+  .swatches { grid-template-columns: repeat(2, 1fr); }
+  .specimen .sample-display { font-size: 32px; }
+}
