@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css?v=5">
-<link rel="stylesheet" href="../design.css?v=3">
+<link rel="stylesheet" href="../styles.css?v=6">
+<link rel="stylesheet" href="../design.css?v=4">
 <link rel="icon" type="image/svg+xml" href="../synsei-icon.svg">
 <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TKNXQMXL"></script>
 <script>
@@ -88,18 +88,18 @@
     </div>
   </section>
 
-  <section id="colors" class="section tint">
+  <section id="colors" class="section">
     <div class="wrap">
       <h2>Colors</h2>
-      <p class="section-intro">Six colors, plus two darker twins for text. Bright Ochre, Sage, and Stone are shapes and accents only, never body text. The dark twins carry words.</p>
+      <p class="section-intro">White is the page, Light Grey is the cards. Bright Ochre, Sage, and Stone are shapes and accents only, never body text. The dark twins carry words.</p>
       <div class="swatches">
         <article class="swatch">
-          <div class="chip" style="background:#f7f4ec"></div>
+          <div class="chip" style="background:#ffffff;border-bottom:1px solid var(--card-line)"></div>
           <div class="swatch-body">
-            <h3>Rice Paper</h3>
-            <p class="hex">#F7F4EC</p>
+            <h3>White</h3>
+            <p class="hex">#FFFFFF</p>
             <p>Page background</p>
-            <p>16.60:1 on Ink Black, AAA</p>
+            <p>Ink Black on it 18.25:1, AAA</p>
           </div>
         </article>
         <article class="swatch">
@@ -108,7 +108,7 @@
             <h3>Ink Black</h3>
             <p class="hex">#161513</p>
             <p>Text, headings</p>
-            <p>16.60:1 on Rice Paper, AAA</p>
+            <p>18.25:1 on White, AAA</p>
           </div>
         </article>
         <article class="swatch">
@@ -117,7 +117,7 @@
             <h3>Teacher's Red</h3>
             <p class="hex">#B3402A</p>
             <p>Accent, links, the one red mark</p>
-            <p>5.19:1 on Rice Paper, AA</p>
+            <p>5.70:1 on White, AA</p>
           </div>
         </article>
         <article class="swatch">
@@ -126,7 +126,7 @@
             <h3>Ochre</h3>
             <p class="hex">#C98A2D</p>
             <p>Design track, highlights</p>
-            <p>2.67:1, shapes only</p>
+            <p>2.93:1, shapes only</p>
           </div>
         </article>
         <article class="swatch">
@@ -135,7 +135,7 @@
             <h3>Sage</h3>
             <p class="hex">#6F7D6A</p>
             <p>AI track, calm secondary</p>
-            <p>3.97:1, large text only</p>
+            <p>4.36:1, large text only</p>
           </div>
         </article>
         <article class="swatch">
@@ -144,7 +144,18 @@
             <h3>Stone</h3>
             <p class="hex">#8B8B84</p>
             <p>Hairlines, quiet elements</p>
-            <p>3.12:1, large text only</p>
+            <p>3.43:1, large text only</p>
+          </div>
+        </article>
+        <article class="swatch">
+          <div class="chip" style="background:#f3f3f3"></div>
+          <div class="swatch-body">
+            <h3>Light Grey</h3>
+            <p class="hex">#F3F3F3</p>
+            <p>Card and panel background</p>
+            <p>Ink Black on it 16.45:1, AAA</p>
+          </div>
+        </article>
           </div>
         </article>
         <article class="swatch">
@@ -153,7 +164,7 @@
             <h3>Ochre Dark</h3>
             <p class="hex">#8D611F</p>
             <p>Text-safe Ochre</p>
-            <p>4.95:1 on Rice Paper, AA</p>
+            <p>5.44:1 on White, AA</p>
           </div>
         </article>
         <article class="swatch">
@@ -162,7 +173,7 @@
             <h3>Sage Dark</h3>
             <p class="hex">#5E6A5A</p>
             <p>Text-safe Sage</p>
-            <p>5.18:1 on Rice Paper, AA</p>
+            <p>5.70:1 on White, AA</p>
           </div>
         </article>
       </div>
@@ -188,7 +199,7 @@
     </div>
   </section>
 
-  <section id="components" class="section tint">
+  <section id="components" class="section">
     <div class="wrap">
       <h2>Components</h2>
       <p class="section-intro">One red mark per view. Buttons are Teacher's Red with white text. Track shapes: circle for Design, square for Product, triangle for AI.</p>
@@ -228,8 +239,8 @@
         <li><code>Intro</code> — muted, full container width, margin-bottom 32px</li>
         <li><code>Card border</code> — 1px Stone at 40% opacity</li>
         <li><code>Kicker</code> — Teacher's Red, bold, 13px, letter-spacing .08em, uppercase</li>
-        <li><code>Muted text</code> — Ink Black at 68% opacity, 6.07:1, passes AA</li>
-        <li><code>Section tint</code> — Stone at 8% opacity over Rice Paper</li>
+        <li><code>Muted text</code> — Ink Black at 68% opacity, 6.27:1 on white, 5.65:1 on cards, passes AA</li>
+        <li><code>Card background</code> — Light Grey #F3F3F3</li>
       </ul>
       <div class="design-note" style="margin-top:32px">
         <p><strong>Retired.</strong> Dojo terminology, the enso circle, and the hanko seal are retired. The name's sensei wordplay is the only Japanese thing about the brand.</p>

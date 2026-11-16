@@ -82,13 +82,13 @@
 .tokens code {
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   font-size: 14px;
-  background: var(--tint);
+  background: var(--card);
   padding: 2px 6px;
   border-radius: 4px;
 }
 
 .design-note {
-  background: var(--tint);
+  background: var(--card);
   border-radius: 10px;
   padding: 24px;
 }
