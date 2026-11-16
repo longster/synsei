@@ -59,8 +59,9 @@
 }
 .specimen .sample-display {
   font-family: var(--display);
-  font-size: 44px;
-  line-height: 1.15;
+  font-size: clamp(48px, 8vw, 88px);
+  line-height: 0.98;
+  text-transform: uppercase;
   margin: 0 0 8px;
 }
 .specimen .sample-h2 {
@@ -97,5 +98,4 @@
 @media (max-width: 760px) {
   .lockups { grid-template-columns: 1fr; }
   .swatches { grid-template-columns: repeat(2, 1fr); }
-  .specimen .sample-display { font-size: 32px; }
 }
