@@ -14,6 +14,7 @@
   --sage-dark: #5e6a5a;
   --stone: #8b8b84;
   --line: #8b8b84;
+  --card-line: rgba(139, 139, 132, 0.4);
   --muted: rgba(22, 21, 19, 0.68);
   --tint: rgba(139, 139, 132, 0.08);
   --display: "Patua One", Georgia, "Times New Roman", serif;
@@ -102,7 +103,6 @@ a:hover { text-decoration-thickness: 2px; }
 .lede {
   font-size: 19px;
   color: var(--muted);
-  max-width: 640px;
   margin: 0 0 28px;
 }
 .button {
@@ -127,7 +127,6 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .section-intro {
   color: var(--muted);
-  max-width: 640px;
   margin: 0 0 32px;
 }
 
@@ -140,7 +139,7 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .card {
   background: var(--card);
-  border: 1px solid var(--line);
+  border: 1px solid var(--card-line);
   border-radius: 10px;
   padding: 24px;
 }
@@ -181,11 +180,7 @@ a:hover { text-decoration-thickness: 2px; }
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
 }
 
-/* About */
 
-#about p { max-width: 680px; }
-
-/* Footer */
 
 .site-footer {
   border-top: 1px solid var(--line);
